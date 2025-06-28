@@ -1,14 +1,10 @@
-import { useAuth, useUser } from "@clerk/clerk-expo";
+import { useAuth } from "@clerk/clerk-expo";
 import { Button, Text, View } from "react-native";
+import { useUserContext } from "../../context/AppProviders";
 
 const Home = () => {
   const { signOut } = useAuth();
-  const { user } = useUser();
-
-  const userEmail =
-    user?.primaryEmailAddress?.emailAddress ||
-    user?.emailAddresses?.[0]?.emailAddress ||
-    "No email available";
+  const { user, userEmail } = useUserContext();
 
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>

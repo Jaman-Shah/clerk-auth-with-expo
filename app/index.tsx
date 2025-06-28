@@ -1,5 +1,5 @@
-import { Text, View, Button } from "react-native";
 import { useRouter } from "expo-router";
+import { Button, Text, View } from "react-native";
 
 export default function Index() {
   const router = useRouter();
@@ -13,7 +13,10 @@ export default function Index() {
       }}
     >
       <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Button title="Go to Login" onPress={() => router.push("/(public)/login")} />
+      <Button
+        title="Go to Login"
+        onPress={() => router.push("/(public)/login")}
+      />
     </View>
   );
 }

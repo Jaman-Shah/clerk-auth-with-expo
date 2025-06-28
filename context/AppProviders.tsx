@@ -1,4 +1,4 @@
-import { ClerkProvider, useAuth, useUser } from "@clerk/clerk-expo";
+import { ClerkProvider, useUser } from "@clerk/clerk-expo";
 import * as SecureStore from "expo-secure-store";
 import React, { createContext, useContext, ReactNode } from 'react';
 

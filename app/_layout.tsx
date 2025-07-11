@@ -1,4 +1,4 @@
-import { InitialLayout } from "@/layuot/InitialLayout";
+import { InitialLayout } from "@/layout/InitialLayout";
 import React from "react";
 import { AppProviders } from "../context/AppProviders";
 

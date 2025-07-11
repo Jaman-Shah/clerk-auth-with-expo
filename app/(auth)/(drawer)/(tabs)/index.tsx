@@ -1,7 +1,7 @@
 import { useAuth } from "@clerk/clerk-expo";
 import { router } from "expo-router";
 import { Button, Text, View } from "react-native";
-import { useUserContext } from "../../context/AppProviders";
+import { useUserContext } from "../../../../context/AppProviders";
 
 const Home = () => {
   const { signOut } = useAuth();
@@ -25,7 +25,7 @@ const Home = () => {
       <Button title="Sign Out" onPress={() => signOut()} />
       <Button
         title="Go to Profile"
-        onPress={() => router.push("/(auth)/profile")}
+        onPress={() => router.push("/(auth)/(drawer)/(tabs)/profile")}
       />
     </View>
   );

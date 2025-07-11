@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "clerk-3",
-    "slug": "clerk-3",
+    "name": "vocamania",
+    "slug": "vocamania",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

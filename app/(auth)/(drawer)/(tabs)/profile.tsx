@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { useUserContext } from "../../context/AppProviders";
+import { useUserContext } from "../../../../context/AppProviders";
 
 const Profile = () => {
   const { user, userEmail } = useUserContext();
